@@ -147,3 +147,9 @@ pip install tensorflow==2.18 opencv-python matplotlib numpy==1.26.4
 - 🔍 Trained **Siamese Neural Network** for facial verification  
 - 🔐 Can be extended into a **face login system** or **security access gate**  
 - ⚡ Lightweight and accurate enough for **real-time applications**
+
+---
+## Author
+**Rishabh Chauhan**  
+Email: rishabhc2234@gmail.com
+
