@@ -10,12 +10,12 @@ This project implements a **real-time facial verification system** using a **Sia
 │
 ├── Facial Verification with Siamese Network.ipynb       # Main training notebook
 │
-├── application_data/                                    # Captured images
+├── data/                                    # Captured images
 │   ├── anchor/
 │   ├── positive/
 │   └── negative/
 │
-├── data/                                                # Dataset folder
+├── archive/                                               # Dataset folder
 │   └── lfw-deepfunneled/                                # (original LFW data)
 │
 ├── siamesemodelv2.h5                                    ❌ Model file (not uploaded due to size)
