@@ -31,6 +31,38 @@ This project implements a **real-time facial verification system** using a **Sia
 
 ---
 
+## Dataset Details
+
+This project uses a combination of **custom webcam images** and the **Labeled Faces in the Wild (LFW)** dataset to train and validate the Siamese Neural Network.
+
+### 1. Custom Captured Images
+Images collected in real-time using your webcam:
+
+```
+data/
+├── anchor/      # Anchor images (press 'a')
+├── positive/    # Positive images (press 'p')
+└── negative/    # Negative images (optional)
+```
+
+These images are used to train the model on verifying facial similarity.
+
+### 2. LFW Dataset (from Kaggle)
+Additional face data is sourced from the **Labeled Faces in the Wild (LFW)** dataset.
+
+```
+archive/
+└── lfw-deepfunneled/    # Original LFW dataset (unzipped)
+```
+
+- 📥 **Download from Kaggle:**  
+  https://www.kaggle.com/datasets/scikit-learn/lfw-people
+
+- ⚠️ **Note:** This dataset is not included in the GitHub repo due to size limits.  
+  You must manually download and extract it to:  
+  `archive/lfw-deepfunneled/`
+
+
 ## 🧪 What is a Siamese Network?
 
 A **Siamese Neural Network** is a type of deep learning model that learns **similarity** between pairs of inputs. Instead of classifying individual images, it **compares two images** and outputs a similarity score.
