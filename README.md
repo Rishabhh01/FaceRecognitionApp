@@ -1,10 +1,10 @@
-# 🧠 Face Recognition App using Siamese Neural Network
+# Face Recognition App using Siamese Neural Network
 
 This project implements a **real-time facial verification system** using a **Siamese Neural Network (SNN)** in TensorFlow and OpenCV. The model compares two images and predicts whether they belong to the **same person or not** — enabling **face verification**, not just classification.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 <pre lang="markdown"> ``` FaceRecognitionApp/
 │
@@ -24,10 +24,10 @@ This project implements a **real-time facial verification system** using a **Sia
 └── .gitattributes                                       # For Git LFS tracking (if enabled)
  ``` </pre>
 
-> 🛑 **Note:**  
+> **Note:**  
 > The model files (`.h5` / `.keras`) and dataset were **not uploaded to GitHub** because they exceeded [GitHub’s 100MB file limit](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).  
 >  
-> ✅ You can **generate your own dataset** and **train the model** by running the provided notebook.
+> You can **generate your own dataset** and **train the model** by running the provided notebook.
 
 ---
 
@@ -55,7 +55,7 @@ archive/
 └── lfw-deepfunneled/    # Original LFW dataset (unzipped)
 ```
 
-- 📥 **Download from Kaggle:**  
+- **Download from Kaggle:**  
   https://www.kaggle.com/datasets/scikit-learn/lfw-people
 
 - ⚠️ **Note:** This dataset is not included in the GitHub repo due to size limits.  
@@ -63,11 +63,11 @@ archive/
   `archive/lfw-deepfunneled/`
 
 
-## 🧪 What is a Siamese Network?
+## What is a Siamese Network?
 
 A **Siamese Neural Network** is a type of deep learning model that learns **similarity** between pairs of inputs. Instead of classifying individual images, it **compares two images** and outputs a similarity score.
 
-### 🧬 Key Features:
+### Key Features:
 - Two identical subnetworks (CNNs with shared weights)
 - Embedding output of shape `(4096,)` for both images
 - A custom **L1 Distance Layer** compares embeddings
@@ -77,7 +77,7 @@ This approach enables **one-shot learning** — the model doesn't need retrainin
 
 ---
 
-## 🚀 Pipeline Overview
+## Pipeline Overview
 
 ### 1. **Data Preparation**
 - **Anchor Images**: Captured from webcam using key `'a'`
@@ -106,7 +106,7 @@ This approach enables **one-shot learning** — the model doesn't need retrainin
 
 ---
 
-## 🛠️ Tech Stack & Libraries
+## Tech Stack & Libraries
 
 | Tool            | Purpose                      |
 |-----------------|------------------------------|
@@ -119,7 +119,7 @@ This approach enables **one-shot learning** — the model doesn't need retrainin
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 Install Python dependencies:
 
@@ -132,7 +132,7 @@ conda create -n face-rec-env python=3.11
 conda activate face-rec-env
 pip install tensorflow==2.18 opencv-python matplotlib numpy==1.26.4
 ```
-## 📷 Running the Application
+## Running the Application
 
 - Press **`a`** to capture **anchor** images  
 - Press **`p`** to capture **positive** images  
@@ -142,11 +142,11 @@ pip install tensorflow==2.18 opencv-python matplotlib numpy==1.26.4
 
 ---
 
-## ✅ Outcomes
+## Outcomes
 
-- 🔍 Trained **Siamese Neural Network** for facial verification  
-- 🔐 Can be extended into a **face login system** or **security access gate**  
-- ⚡ Lightweight and accurate enough for **real-time applications**
+- Trained **Siamese Neural Network** for facial verification  
+- Can be extended into a **face login system** or **security access gate**  
+- Lightweight and accurate enough for **real-time applications**
 
 ---
 ## Author
