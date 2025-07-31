@@ -1,4 +1,4 @@
-# Face Recognition App using Siamese Neural Network
+# Face Recognition using Siamese Neural Network
 
 This project implements a **real-time facial verification system** using a **Siamese Neural Network (SNN)** in TensorFlow and OpenCV. The model compares two images and predicts whether they belong to the **same person or not** — enabling **face verification**, not just classification.
 
